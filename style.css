@@ -11,6 +11,8 @@
   --line: #E4EAE9;
   --voice: #0E7A6E;   /* teal — "voice" / dictation */
   --meaning: #A86D1F; /* amber — "meaning" / translation */
+  --voice-soft: rgba(14, 122, 110, 0.10);  /* faint teal fill (accents) */
+  --voice-line: rgba(14, 122, 110, 0.34);  /* faint teal border */
   --radius: 14px;
   --maxw: 720px;
   color-scheme: light dark;
@@ -26,6 +28,8 @@
     --line: #26363A;
     --voice: #34C8B8;
     --meaning: #F2B45C;
+    --voice-soft: rgba(52, 200, 184, 0.13);
+    --voice-line: rgba(52, 200, 184, 0.32);
   }
 }
 
@@ -64,9 +68,26 @@ a:focus-visible { outline: 2px solid var(--voice); outline-offset: 2px; border-r
   width: 26px; height: 26px; border-radius: 7px;
   display: inline-block; object-fit: cover; flex: none;
 }
-.nav { display: flex; gap: 20px; font-size: 15px; }
+.nav { display: flex; align-items: center; gap: 20px; font-size: 15px; }
 .nav a { color: var(--muted); }
 .nav a:hover { color: var(--text); text-decoration: none; }
+
+/* Language toggle (EN · UK) */
+.lang-toggle {
+  display: inline-flex; align-items: center; gap: 2px;
+  border: 1px solid var(--voice-line); border-radius: 999px; padding: 2px;
+  background: var(--voice-soft);
+}
+.lang-toggle button {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 12px; letter-spacing: 0.04em; line-height: 1;
+  color: var(--muted); background: transparent; border: 0; cursor: pointer;
+  padding: 5px 9px; border-radius: 999px;
+  transition: color 0.15s, background 0.15s;
+}
+.lang-toggle button:hover { color: var(--voice); }
+.lang-toggle button[aria-pressed="true"] { color: var(--voice); background: var(--surface); }
+.lang-toggle button:focus-visible { outline: 2px solid var(--voice); outline-offset: 2px; }
 
 /* Hero */
 .hero { padding: 76px 0 56px; text-align: center; }

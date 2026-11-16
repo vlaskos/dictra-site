@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Support — Dictra</title>
+  <title data-i18n="title.support">Support — Dictra</title>
   <meta name="description" content="Help with Dictra: adding the keyboard, Full Access, offline models, dictation history, and how to get in touch.">
   <link rel="icon" type="image/png" sizes="256x256" href="assets/icon/favicon-256.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/icon/favicon-32.png">
@@ -16,48 +16,52 @@
     <div class="wrap">
       <a class="brand" href="index.html"><img class="mark" src="assets/icon/apple-touch-icon.png" alt="" width="26" height="26">Dictra</a>
       <nav class="nav">
-        <a href="privacy.html">Privacy</a>
-        <a href="support.html">Support</a>
+        <a href="privacy.html" data-i18n="nav.privacy">Privacy</a>
+        <a href="support.html" data-i18n="nav.support">Support</a>
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button type="button" data-setlang="en" aria-pressed="true">EN</button>
+          <button type="button" data-setlang="uk" aria-pressed="false">UK</button>
+        </div>
       </nav>
     </div>
   </header>
 
   <main class="page-main">
     <div class="wrap doc">
-      <h1>Support</h1>
-      <p class="updated">Get Dictra set up, or get in touch.</p>
+      <h1 data-i18n="sp.h1">Support</h1>
+      <p class="updated" data-i18n="sp.updated">Get Dictra set up, or get in touch.</p>
 
       <div class="faq">
         <div class="q">
-          <h3>How do I add the Dictra keyboard?</h3>
-          <p>Open Settings → General → Keyboard → Keyboards → Add New Keyboard, and choose Dictra. Then switch to it from the globe icon in any app.</p>
+          <h3 data-i18n="sp.q1">How do I add the Dictra keyboard?</h3>
+          <p data-i18n="sp.a1">Open Settings → General → Keyboard → Keyboards → Add New Keyboard, and choose Dictra. Then switch to it from the globe icon in any app.</p>
         </div>
         <div class="q">
-          <h3>Why does it need Full Access?</h3>
-          <p>Full Access lets the keyboard reach the microphone so it can hear your dictation. It is used only for that. Dictra does not log keystrokes or send anything over the network.</p>
+          <h3 data-i18n="sp.q2">Why does it need Full Access?</h3>
+          <p data-i18n="sp.a2">Full Access lets the keyboard reach the microphone so it can hear your dictation. It is used only for that. Dictra does not log keystrokes or send anything over the network.</p>
         </div>
         <div class="q">
-          <h3>Does it work offline?</h3>
-          <p>Yes. Dictra downloads one speech model the first time you use it. After that, dictation and translation run on your iPhone with no internet connection.</p>
+          <h3 data-i18n="sp.q3">Does it work offline?</h3>
+          <p data-i18n="sp.a3">Yes. Dictra downloads one speech model the first time you use it. After that, dictation and translation run on your iPhone with no internet connection.</p>
         </div>
         <div class="q">
-          <h3>Which languages are supported?</h3>
-          <p>Dictation in Ukrainian, Russian, Polish, and English. Translation works in any direction between them — speak in one language and insert in another.</p>
+          <h3 data-i18n="sp.q4">Which languages are supported?</h3>
+          <p data-i18n="sp.a4">Dictation in Ukrainian, Russian, Polish, and English. Translation works in any direction between them — speak in one language and insert in another.</p>
         </div>
         <div class="q">
-          <h3>Where is my dictation history stored?</h3>
-          <p>Only on your device. You can clear it any time in the app, and deleting the app removes it. Nothing is uploaded.</p>
+          <h3 data-i18n="sp.q5">Where is my dictation history stored?</h3>
+          <p data-i18n="sp.a5">Only on your device. You can clear it any time in the app, and deleting the app removes it. Nothing is uploaded.</p>
         </div>
         <div class="q">
-          <h3>The keyboard can't hear me</h3>
-          <p>Check that Full Access is on for Dictra in Settings → General → Keyboard → Keyboards → Dictra, and that Microphone access is allowed for the app.</p>
+          <h3 data-i18n="sp.q6">The keyboard can't hear me</h3>
+          <p data-i18n="sp.a6">Check that Full Access is on for Dictra in Settings → General → Keyboard → Keyboards → Dictra, and that Microphone access is allowed for the app.</p>
         </div>
       </div>
 
       <div class="contact-card">
-        <p class="label">Contact</p>
+        <p class="label" data-i18n="sp.contact.label">Contact</p>
         <p class="email"><a href="mailto:kosyi.vlad@gmail.com">kosyi.vlad@gmail.com</a></p>
-        <p class="muted" style="margin:6px 0 0;">Questions, bugs, or feedback — send them here.</p>
+        <p class="muted" style="margin:6px 0 0;" data-i18n="sp.contact.muted">Questions, bugs, or feedback — send them here.</p>
       </div>
     </div>
   </main>
@@ -66,10 +70,11 @@
     <div class="wrap">
       <span>© 2026 Dictra</span>
       <span class="links">
-        <a href="index.html">Home</a>
-        <a href="privacy.html">Privacy Policy</a>
+        <a href="index.html" data-i18n="foot.home">Home</a>
+        <a href="privacy.html" data-i18n="foot.privacy">Privacy Policy</a>
       </span>
     </div>
   </footer>
+  <script src="i18n.js"></script>
 </body>
 </html>

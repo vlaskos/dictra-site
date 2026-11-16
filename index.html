@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dictra — Talk, Type, Translate</title>
+  <title data-i18n="title.index">Dictra — Talk, Type, Translate</title>
   <meta name="description" content="A private iOS keyboard that turns your voice into text, or its translation, in any app. Dictation and translation run on your iPhone. Ukrainian, Russian, Polish, English. Free.">
   <link rel="icon" type="image/png" sizes="256x256" href="assets/icon/favicon-256.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/icon/favicon-32.png">
@@ -20,8 +20,12 @@
     <div class="wrap">
       <a class="brand" href="index.html"><img class="mark" src="assets/icon/apple-touch-icon.png" alt="" width="26" height="26">Dictra</a>
       <nav class="nav">
-        <a href="privacy.html">Privacy</a>
-        <a href="support.html">Support</a>
+        <a href="privacy.html" data-i18n="nav.privacy">Privacy</a>
+        <a href="support.html" data-i18n="nav.support">Support</a>
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button type="button" data-setlang="en" aria-pressed="true">EN</button>
+          <button type="button" data-setlang="uk" aria-pressed="false">UK</button>
+        </div>
       </nav>
     </div>
   </header>
@@ -30,11 +34,11 @@
     <section class="hero">
       <div class="wrap">
         <h1 class="wordmark reveal">Dictra</h1>
-        <p class="wordtag reveal">talk, type, <span class="tr">translate</span></p>
-        <p class="lede reveal">Speak, and your words land as text in any app — translated as you go. Everything runs on your iPhone.</p>
+        <p class="wordtag reveal" data-i18n="hero.tag">talk, type, <span class="tr">translate</span></p>
+        <p class="lede reveal" data-i18n="hero.lede">Speak, and your words land as text in any app — translated as you go. Everything runs on your iPhone.</p>
         <div class="cta-row reveal">
-          <span class="pill">Coming to the App Store</span>
-          <span class="meta-pills">Free dictation · On-device · Translation · No account</span>
+          <span class="pill" data-i18n="hero.pill">Coming to the App Store</span>
+          <span class="meta-pills" data-i18n="hero.pills">Free dictation · On-device · Translation · No account</span>
         </div>
       </div>
     </section>
@@ -49,15 +53,15 @@
             </div>
           </div>
           <div class="feature-copy reveal">
-            <p class="kicker">The idea</p>
-            <h2>A keyboard that types what you say</h2>
-            <p>Dictra turns your voice into text in any app, and can translate it on the way in. It sets up in five short steps, and after that dictation and translation run entirely on your iPhone.</p>
+            <p class="kicker" data-i18n="f1.kicker">The idea</p>
+            <h2 data-i18n="f1.h2">A keyboard that types what you say</h2>
+            <p data-i18n="f1.p">Dictra turns your voice into text in any app, and can translate it on the way in. It sets up in five short steps, and after that dictation and translation run entirely on your iPhone.</p>
             <ol class="steps onboarding-steps">
-              <li>Welcome — voice to text, on your phone.</li>
-              <li>Allow the microphone.</li>
-              <li>Add the keyboard, turn on Full Access.</li>
-              <li>Download a speech model, then work offline.</li>
-              <li>Tap the mic and talk.</li>
+              <li data-i18n="f1.s1">Welcome — voice to text, on your phone.</li>
+              <li data-i18n="f1.s2">Allow the microphone.</li>
+              <li data-i18n="f1.s3">Add the keyboard, turn on Full Access.</li>
+              <li data-i18n="f1.s4">Download a speech model, then work offline.</li>
+              <li data-i18n="f1.s5">Tap the mic and talk.</li>
             </ol>
           </div>
         </article>
@@ -67,9 +71,9 @@
             <img src="assets/screenshots/phone-history.png" alt="Dictra home with on-device dictation history" loading="lazy" width="1079" height="2264">
           </div>
           <div class="feature-copy reveal">
-            <p class="kicker">Private by design</p>
-            <h2>It stays on your iPhone</h2>
-            <p>Dictate into any app and every word is turned to text on the device. Your history is saved only on your iPhone — no account, no cloud, nothing uploaded. Wipe it in a tap whenever you want.</p>
+            <p class="kicker" data-i18n="f2.kicker">Private by design</p>
+            <h2 data-i18n="f2.h2">It stays on your iPhone</h2>
+            <p data-i18n="f2.p">Dictate into any app and every word is turned to text on the device. Your history is saved only on your iPhone — no account, no cloud, nothing uploaded. Wipe it in a tap whenever you want.</p>
           </div>
         </article>
 
@@ -78,14 +82,14 @@
             <img src="assets/screenshots/phone-keyboard.png" alt="Dictra keyboard translating Ukrainian to English in a chat" loading="lazy" width="1079" height="2264">
           </div>
           <div class="feature-copy reveal">
-            <p class="kicker">Four languages, any direction</p>
-            <h2>Speak Ukrainian, insert English</h2>
-            <p>Talk in one language and the keyboard inserts another — any direction between Ukrainian, Russian, Polish, and English. The translation runs on the device too, so nothing you say leaves the phone.</p>
+            <p class="kicker" data-i18n="f3.kicker">Four languages, any direction</p>
+            <h2 data-i18n="f3.h2">Speak Ukrainian, insert English</h2>
+            <p data-i18n="f3.p">Talk in one language and the keyboard inserts another — any direction between Ukrainian, Russian, Polish, and English. The translation runs on the device too, so nothing you say leaves the phone.</p>
             <ul class="examples">
-              <li>Ukrainian <b>→</b> English</li>
-              <li>Polish <b>→</b> Ukrainian</li>
-              <li>Russian <b>→</b> Polish</li>
-              <li>English <b>→</b> Ukrainian</li>
+              <li data-i18n="f3.e1">Ukrainian <b>→</b> English</li>
+              <li data-i18n="f3.e2">Polish <b>→</b> Ukrainian</li>
+              <li data-i18n="f3.e3">Russian <b>→</b> Polish</li>
+              <li data-i18n="f3.e4">English <b>→</b> Ukrainian</li>
             </ul>
           </div>
         </article>
@@ -95,9 +99,9 @@
             <img src="assets/screenshots/phone-themes.png" alt="Dictra shown side by side in dark and light themes" loading="lazy" width="1079" height="2264">
           </div>
           <div class="feature-copy reveal">
-            <p class="kicker">Looks right everywhere</p>
-            <h2>Light or dark. Your call.</h2>
-            <p>Dictra follows your system appearance and ships both light and dark themes, tuned so the accents stay easy to read either way. The app itself is localized in English and Ukrainian.</p>
+            <p class="kicker" data-i18n="f4.kicker">Looks right everywhere</p>
+            <h2 data-i18n="f4.h2">Light or dark. Your call.</h2>
+            <p data-i18n="f4.p">Dictra follows your system appearance and ships both light and dark themes, tuned so the accents stay easy to read either way. The app itself is localized in English and Ukrainian.</p>
           </div>
         </article>
 
@@ -107,15 +111,15 @@
     <section class="howto">
       <div class="wrap promo">
         <div class="promo-copy reveal">
-          <p class="kicker">How it works</p>
-          <h2>From voice to text in three taps</h2>
-          <p>Dictra is a keyboard extension, so it works inside any app: messages, notes, email, search. Switch to it like any other keyboard, then talk.</p>
+          <p class="kicker" data-i18n="ht.kicker">How it works</p>
+          <h2 data-i18n="ht.h2">From voice to text in three taps</h2>
+          <p data-i18n="ht.p">Dictra is a keyboard extension, so it works inside any app: messages, notes, email, search. Switch to it like any other keyboard, then talk.</p>
           <ol class="steps">
-            <li>Add the Dictra keyboard in Settings and allow Full Access so it can hear you.</li>
-            <li>Open any app, switch to Dictra, and tap the mic. Speak the way you talk.</li>
-            <li>Your words appear as text. Turn on Translate to insert another language instead.</li>
+            <li data-i18n="ht.s1">Add the Dictra keyboard in Settings and allow Full Access so it can hear you.</li>
+            <li data-i18n="ht.s2">Open any app, switch to Dictra, and tap the mic. Speak the way you talk.</li>
+            <li data-i18n="ht.s3">Your words appear as text. Turn on Translate to insert another language instead.</li>
           </ol>
-          <p class="muted">One speech model downloads on first launch. After that, dictation and translation work offline.</p>
+          <p class="muted" data-i18n="ht.muted">One speech model downloads on first launch. After that, dictation and translation work offline.</p>
         </div>
         <div class="promo-video reveal from-right">
           <img class="promo-gif" src="assets/video/dictra-promo.gif" alt="Dictra in motion — dictate into the field, then translate" loading="lazy">
@@ -128,8 +132,8 @@
     <div class="wrap">
       <span>© 2026 Dictra</span>
       <span class="links">
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="support.html">Support</a>
+        <a href="privacy.html" data-i18n="foot.privacy">Privacy Policy</a>
+        <a href="support.html" data-i18n="foot.support">Support</a>
       </span>
     </div>
   </footer>
@@ -150,5 +154,6 @@
       els.forEach(function (el) { io.observe(el); });
     })();
   </script>
+  <script src="i18n.js"></script>
 </body>
 </html>
