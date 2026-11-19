@@ -218,9 +218,33 @@ ol.steps li:last-child { padding-bottom: 0; }
   font-size: clamp(66px, 15vw, 150px);
   line-height: 0.9; letter-spacing: -0.045em; font-weight: 800;
   margin: 0 0 6px;
-  background: linear-gradient(104deg, var(--voice) 8%, var(--meaning) 94%);
+  /* Teal wordmark with a warm "meaning" glow that slowly wanders across the letters —
+     a quiet nod to the app: dictation is the voice, translation is the warmth drifting over it. */
+  background-image:
+    radial-gradient(closest-side,
+      var(--meaning) 0%,
+      color-mix(in srgb, var(--meaning) 45%, transparent) 48%,
+      transparent 78%),
+    linear-gradient(0deg, var(--voice), var(--voice));
+  background-repeat: no-repeat;
+  background-size: 42% 150%, 100% 100%;
+  background-position: 10% 40%, 0 0;
   -webkit-background-clip: text; background-clip: text;
   color: var(--voice); -webkit-text-fill-color: transparent;
+  animation: wordmark-roam 11s ease-in-out infinite;
+}
+@keyframes wordmark-roam {
+  0%   { background-position: 6% 32%, 0 0; }
+  20%  { background-position: 40% 16%, 0 0; }
+  40%  { background-position: 78% 30%, 0 0; }
+  58%  { background-position: 94% 72%, 0 0; }
+  76%  { background-position: 46% 86%, 0 0; }
+  90%  { background-position: 16% 58%, 0 0; }
+  100% { background-position: 6% 32%, 0 0; }
+}
+/* Respect reduced-motion: park the warm glow on the right, no drift. */
+@media (prefers-reduced-motion: reduce) {
+  .wordmark { animation: none; background-position: 72% 48%, 0 0; }
 }
 .wordtag {
   font-size: clamp(18px, 4.4vw, 30px); font-weight: 650; letter-spacing: 0.015em;
