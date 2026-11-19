@@ -15,7 +15,7 @@
 
     // index.html — title + hero
     "title.index": "Dictra — Говори, друкуй, перекладай",
-    "hero.tag": "говори, друкуй, <span class=\"tr\">перекладай</span>",
+    "hero.tag": "<span class=\"tr\">dic</span>tate <span class=\"amp\">&amp;</span> <span class=\"tr\">tra</span>nslate",
     "hero.lede": "Говори — і слова одразу стають текстом у будь-якому застосунку, а за потреби й перекладом. Усе працює просто на iPhone.",
     "hero.pill": "Скоро в App Store",
     "hero.pills": "Безкоштовна диктовка · На пристрої · Переклад · Без акаунта",

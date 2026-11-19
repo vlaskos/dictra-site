@@ -227,6 +227,7 @@ ol.steps li:last-child { padding-bottom: 0; }
   margin: 0 0 22px; color: var(--text);
 }
 .wordtag .tr { color: var(--meaning); }
+.wordtag .amp { color: var(--muted); font-weight: 550; }
 
 /* Feature rows — large screenshot beside its topic, alternating sides */
 .features .wrap, .howto .wrap { max-width: 1040px; }
